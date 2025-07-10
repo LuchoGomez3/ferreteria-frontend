@@ -1,0 +1,24 @@
+.carousel {
+  width: 100vw;
+  overflow: hidden;
+  height: 20vh;
+}
+
+.carouselTrack {
+  display: flex;
+  width: 300%; /* o 100% * número de imágenes */
+  animation: slide 12s infinite;
+}
+
+.carouselTrack img {
+  width: 100vw;
+  height: 20vh;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100vw); }
+  66% { transform: translateX(-200vw); }
+  100% { transform: translateX(0); }
+}

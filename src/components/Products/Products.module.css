@@ -1,0 +1,21 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 50px;
+}
+
+.section h1{
+    margin: 20px 0 20px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+}
